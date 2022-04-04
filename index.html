@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Cherry Blossom</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">logo</a>
+    <ul>
+      <li><a href="#">menu1</a></li>
+      <li><a href="#">menu2</a></li>
+      <li><a href="#">menu3</a></li>
+      <li><a href="#">menu4</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <img src="./img/light.png" alt="-" id="light">
+    <img src="./img/moon.png" alt="-" id="moon">
+    <img src="./img/back.png" alt="-" id="back">
+    <h2 id="text">Cherry Blossom</h2>
+    <a href="#text2" id="btn">more</a>
+    <img src="./img/front.png" alt="-" id="front">
+  </section>
+
+  <div class="bbody" id="text2">
+    <h2>Please enter a subtitle</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident pariatur blanditiis, vel velit voluptas fuga accusamus, reprehenderit modi, suscipit nam autem magni assumenda omnis eveniet laborum dolorum nostrum neque tenetur qui? Error dolore, earum accusamus nesciunt commodi id aliquam ratione quasi consequatur rem dignissimos magni voluptatem dolorem dolor excepturi cupiditate unde nihil sunt possimus consequuntur incidunt non ducimus laudantium recusandae. Enim illo minima vero at corporis obcaecati sunt culpa non iusto repellendus error explicabo harum, consequatur quos sapiente laborum maxime pariatur! Qui eum quam officia, aut dolor impedit quas nulla id earum quo nobis eligendi quidem esse accusamus rem sunt.<br/><br/>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident pariatur blanditiis, vel velit voluptas fuga accusamus, reprehenderit modi, suscipit nam autem magni assumenda omnis eveniet laborum dolorum nostrum neque tenetur qui? Error dolore, earum accusamus nesciunt commodi id aliquam ratione quasi consequatur rem dignissimos magni voluptatem dolorem dolor excepturi cupiditate unde nihil sunt possimus consequuntur incidunt non ducimus laudantium recusandae. Enim illo minima vero at corporis obcaecati sunt culpa non iusto repellendus error explicabo harum, consequatur quos sapiente laborum maxime pariatur! Qui eum quam officia, aut dolor impedit quas nulla id earum quo nobis eligendi quidem esse accusamus rem sunt.<br/><br/>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid consequuntur totam quidem voluptate cupiditate vitae quae esse nemo, modi quas sapiente iure dolorem repellat recusandae corrupti libero eos rerum molestias. Quo animi mollitia, adipisci cumque officiis laudantium provident eligendi ipsum harum sint placeat! Eveniet, facere labore veritatis, nihil enim eius eaque quisquam tempore libero velit hic molestiae fugit illum quasi?</p>
+  </div>
+
+  <footer>
+  </footer>
+
+  <script>
+    let light = document.getElementById('light')
+    let moon = document.getElementById('moon')
+    let back = document.getElementById('back')
+    let text = document.getElementById('text')
+    let btn = document.getElementById('btn')
+    let front = document.getElementById('front')
+
+    window.addEventListener('scroll', function(){
+      let scrolle = window.scrollY;
+
+      // 이렇게하면 하면 가로스크롤이 생기므로 body에 overflow-x h
+      light.style.left = scrolle * 0.25 + 'px';
+      // 그냥하면 별이 빠르게 움직이므로 숫자 줄이기
+
+      moon.style.top = scrolle * 1 + 'px';
+      text.style.marginRight = scrolle * 3 + 'px';
+      text.style.marginTop = scrolle * 0.5 + 'px';
+      btn.style.marginTop = scrolle * 0.5 + 'px';
+    })
+  </script>
+
+</body>
+</html>

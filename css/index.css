@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3F3E6E), to(#FABAE1));
+  background: linear-gradient(#3F3E6E, #FABAE1);
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+}
+
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header li > a {
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+header li > a:hover {
+  background-color: #fff;
+  color: #FABAE1;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 1430px;
+  padding: 100px;
+  overflow: hidden;
+}
+
+section:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#B9DC4F), to(transparent));
+  background: linear-gradient(to top, #B9DC4F, transparent);
+  z-index: 1000;
+}
+
+section img {
+  position: absolute;
+}
+
+section #light {
+  top: 0;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: screen;
+}
+
+section #moon {
+  top: 20;
+  left: 200px;
+}
+
+section #back {
+  z-index: 6;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+}
+
+section #text {
+  color: #fff;
+  position: absolute;
+  font-size: 110px;
+  font-family: "Sunflower", sans-serif;
+  white-space: nowrap;
+  z-index: 8;
+  right: -1200px;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section #front {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+}
+
+#btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #FABAE1;
+  font-weight: 700;
+  padding: 10px 40px;
+  border-radius: 30px;
+  font-size: 22px;
+  line-height: 22px;
+  z-index: 10;
+}
+
+.bbody {
+  height: 100vh;
+  position: relative;
+  top: 0;
+  padding: 100px;
+  background-color: #B9DC4F;
+}
+
+.bbody h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+footer {
+  width: 100%;
+  height: 130px;
+  background-color: #222;
+}
+/*# sourceMappingURL=index.css.map */
